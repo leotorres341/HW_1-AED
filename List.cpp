@@ -5,6 +5,10 @@ template <typename T>
 struct Node {
  T valor;
  Node<T>* next;
+
+ // Constructor
+ Node(): valor(), next(nullptr){}
+ Node (const T& v): valor(v),next(nullptr){}
 };
 
 template <typename U>
@@ -38,6 +42,19 @@ class List {
         return temp-> valor;
     }
 
+    void push_front(U new_value){
+      Node<U>* new_element(new_value);
+      Node<U>* temp=head;
+
+
+
+
+
+    }
+
+
+
+
   
 
 };
@@ -48,3 +65,5 @@ int main(){
 
     
 }
+
+
