@@ -1,9 +1,21 @@
 #include<iostream>
 
-template<typename T>
+
 struct Node {
- T valor;
+ int valor;
  Node* next;
+};
+
+class List {
+    private:
+    Node* head;
+
+    public:
+    List():head(nullptr){};
+
+    template<typename T>
+    
+
 };
 
 
